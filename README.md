@@ -1,2 +1,5 @@
-# gatsby-monorepo
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lernajs.io/)
+
+# Gatsby Monorepo
+
 Monorepo to house Gatsby plugins &amp; themes

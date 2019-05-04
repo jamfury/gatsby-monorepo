@@ -1,0 +1,66 @@
+{
+  "name": "gatsby-monorepo",
+  "private": true,
+  "contributors": [
+    "Mike Nason <nason@jamfury.io>",
+    "Ramin Bozorgzadeh <ramin@jamfury.io>"
+  ],
+  "workspaces": [
+    "packages/*",
+    "themes/*",
+    "starters/*"
+  ],
+  "scripts": {
+    "commit": "git-cz",
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna run clean",
+    "nuke": "lerna exec 'rm -rf node_modules' && rimraf yarn.lock",
+    "lint": "eslint --fix '{packages,starters,themes}/**/*.{js,ts}'",
+    "lerna:publish": "lerna publish --yes",
+    "lerna:version": "lerna version --yes",
+    "postinstall": "yarn bootstrap"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "7.5.2",
+    "@commitlint/config-conventional": "7.5.0",
+    "babel-eslint": "^10.0.1",
+    "cz-conventional-changelog": "2.1.0",
+    "eslint": "^5.2.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-react-app": "4.0.0",
+    "eslint-plugin-emotion": "10.0.7",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "1.6.0",
+    "git-cz": "3.0.1",
+    "husky": "2.2.0",
+    "lerna": "3.13.4",
+    "lint-staged": "8.1.6",
+    "prettier": "1.17.0",
+    "rimraf": "2.6.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,scss,css,md,html}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

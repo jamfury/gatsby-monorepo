@@ -1,0 +1,84 @@
+version: 2.1
+
+executors:
+  node:
+    parameters:
+      image:
+        type: string
+        default: "10"
+    docker:
+      - image: circleci/node:<< parameters.image >>
+        environment:
+          SHARP_DIST_BASE_URL: https://s3-us-west-2.amazonaws.com/sharp-distro/
+
+
+aliases:
+  restore_cache: &restore_cache
+    restore_cache:
+      name: Restore node_modules cache
+      keys:
+        - yarn-cypress-cache-{{ checksum "yarn.lock" }}
+
+  install_node_modules: &install_node_modules
+    run:
+      name: Install node modules
+      command: yarn --frozen-lockfile
+
+  persist_cache: &persist_cache
+    save_cache:
+      name: Save node modules cache
+      key: yarn-cypress-cache-{{ checksum "yarn.lock" }}
+      paths:
+        - ~/.cache
+
+  ignore_master: &ignore_master
+    filters:
+      branches:
+        ignore:
+          - master
+
+
+jobs:
+  bootstrap:
+    executor: node
+    steps:
+      - checkout
+      - run: ./scripts/assert-changed-files.sh "packages/*|themes/*|starters/*|.circleci/*"
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - <<: *persist_cache
+      - run: yarn bootstrap
+
+  starters_validate:
+    executor: node
+    steps:
+      - checkout
+      - run: ./scripts/assert-changed-files.sh "packages/*|starters/*|.circleci/*"
+      - run: sh ./scripts/clone-and-validate.sh starters
+
+
+  starters_publish:
+    executor: node
+    steps:
+      - checkout
+      - <<: *restore_cache
+      - <<: *install_node_modules
+      - <<: *persist_cache
+      - run: sudo apt-get update && sudo apt-get install jq # jq is helpful for parsing json
+      - run: git config --global user.name "JAMfury Bot"
+      - run: git config --global user.email "bot@jamfury.io"
+      - run: sh ./scripts/clone-and-validate.sh starters true
+
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - bootstrap
+      - starters_validate:
+          <<: *ignore_master
+      - starters_publish:
+          filters:
+            branches:
+              only:
+                - master

@@ -1,0 +1,17 @@
+{
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    },
+    "version": {
+      "message": "chore(release): publish",
+      "conventionalCommits": true,
+      "gitHubRelease": true,
+      "allowBranch": "master"
+    }
+  },
+  "packages": ["pachages/*", "themes/*", "starters/*"],
+  "useWorkspaces": true,
+  "version": "independent",
+  "npmClient": "yarn"
+}
