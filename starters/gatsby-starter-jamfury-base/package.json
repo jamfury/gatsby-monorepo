@@ -1,0 +1,24 @@
+{
+  "name": "gatsby-starter-jamfury-base",
+  "private": true,
+  "description": "Gatsby starter for JAMfury sites",
+  "version": "0.0.1",
+  "contributors": [
+    "Mike Nason <nason@jamfury.io>",
+    "Ramin Bozorgzadeh <ramin@jamfury.io>"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "dev": "npm run develop",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "2.4.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6"
+  }
+}
