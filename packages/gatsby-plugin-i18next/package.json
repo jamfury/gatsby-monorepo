@@ -1,7 +1,7 @@
 {
   "name": "@jamfury/gatsby-plugin-i18next",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": "JAMfury/gatsby-monorepo",
   "keywords": [
     "react",
@@ -19,7 +19,7 @@
     "prepare": "yarn run build"
   },
   "dependencies": {
-    "@jamfury/gatsby-i18n": "^0.0.2",
+    "@jamfury/gatsby-i18n": "^0.0.3",
     "i18next": "15.1.0",
     "i18next-browser-languagedetector": "3.0.1",
     "i18next-xhr-backend": "2.0.1",
