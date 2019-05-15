@@ -1,13 +1,13 @@
 node_modules
 
-packages/**/node_modules
-packages/gatsby-i18n/lib/**
-packages/gatsby-plugin-i18next/gatsby-node.js
-packages/gatsby-plugin-i18next/index.js
-packages/gatsby-plugin-i18next/setupI18next.js
-packages/gatsby-plugin-i18next/withI18next.js
+/packages/**/node_modules
+/packages/gatsby-i18n/lib/**
+/packages/gatsby-plugin-i18next/gatsby-node.js
+/packages/gatsby-plugin-i18next/index.js
+/packages/gatsby-plugin-i18next/setupI18next.js
+/packages/gatsby-plugin-i18next/withI18next.js
 
-starters/**/node_modules
-themes/**/node_modules
+/starters/**/node_modules
+/themes/**/node_modules
 
 
