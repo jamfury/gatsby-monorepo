@@ -1,7 +1,7 @@
 {
   "name": "@jamfury/gatsby-i18n",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "repository": "WeConnect/gatsby-monorepo",
   "keywords": [
     "react",
