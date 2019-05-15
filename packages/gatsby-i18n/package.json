@@ -1,7 +1,7 @@
 {
   "name": "@jamfury/gatsby-i18n",
   "description": "Gatsby plugin that provides i18n support",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": "WeConnect/gatsby-monorepo",
   "keywords": [
     "react",
@@ -31,9 +31,9 @@
     "react-helmet": "6.0.0-beta"
   },
   "peerDependencies": {
+    "gatsby": "*",
     "react": "*",
-    "react-dom": "*",
-    "gatsby": "*"
+    "react-dom": "*"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0",
