@@ -1,7 +1,7 @@
 {
   "name": "@jamfury/gatsby-starter-base",
   "description": "Gatsby starter for JAMfury sites",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "contributors": [
     "Mike Nason <nason@jamfury.io>",
     "Ramin Bozorgzadeh <ramin@jamfury.io>"
