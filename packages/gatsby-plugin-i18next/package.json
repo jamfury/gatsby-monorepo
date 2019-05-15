@@ -12,6 +12,9 @@
     "i18n"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "build": "babel src --out-dir . --ignore __tests__",

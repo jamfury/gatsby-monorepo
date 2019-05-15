@@ -3,6 +3,9 @@
   "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@jamfury/gatsby-plugin-i18next": "^0.1.1",
     "gatsby-source-filesystem": "2.0.33"

@@ -7,6 +7,9 @@
     "Ramin Bozorgzadeh <ramin@jamfury.io>"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "dev": "npm run develop",
