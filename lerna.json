@@ -10,7 +10,7 @@
       "allowBranch": "master"
     }
   },
-  "packages": ["pachages/*", "themes/*", "starters/*"],
+  "packages": ["pachages/*", "themes/*"],
   "useWorkspaces": true,
   "version": "independent",
   "npmClient": "yarn"
