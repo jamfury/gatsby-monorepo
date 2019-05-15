@@ -1,13 +1,13 @@
 {
   "name": "@jamfury/gatsby-theme-i18n",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "index.js",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "dependencies": {
-    "@jamfury/gatsby-plugin-i18next": "^0.1.1",
+    "@jamfury/gatsby-plugin-i18next": "^0.1.2",
     "gatsby-source-filesystem": "2.0.33"
   },
   "peerDependencies": {
