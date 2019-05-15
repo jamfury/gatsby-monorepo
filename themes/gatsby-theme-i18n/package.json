@@ -1,0 +1,15 @@
+{
+  "name": "@jamfury/gatsby-theme-i18n",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@jamfury/gatsby-plugin-i18next": "0.0.1",
+    "gatsby-source-filesystem": "2.0.33"
+  },
+  "peerDependencies": {
+    "gatsby": "*",
+    "react": "*",
+    "react-dom": "*"
+  }
+}

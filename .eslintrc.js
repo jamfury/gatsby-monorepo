@@ -20,6 +20,8 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'prettier/prettier': 'error',
     'react/prop-types': 'warn',
+    'react/display-name': 'warn',
+    'class-methods-use-this': 'warn',
     'prefer-destructuring': 0,
     'no-underscore-dangle': 0,
     'import/no-unresolved': 0,

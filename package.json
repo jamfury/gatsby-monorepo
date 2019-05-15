@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-monorepo",
+  "name": "@jamfury/gatsby-monorepo",
   "private": true,
   "contributors": [
     "Mike Nason <nason@jamfury.io>",

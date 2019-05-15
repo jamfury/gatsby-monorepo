@@ -1,0 +1,48 @@
+{
+  "name": "@jamfury/gatsby-i18n",
+  "description": "Gatsby plugin that provides i18n support",
+  "version": "0.0.1",
+  "repository": "WeConnect/gatsby-monorepo",
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-component",
+    "lingui",
+    "i18n"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "/lib",
+    "plugin.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rimraf lib && babel src --out-dir lib --ignore __tests__",
+    "build:watch": "rimraf lib && babel -w src --out-dir lib --ignore __tests__",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "fs-extra": "7.0.1",
+    "langtag-utils": "1.1.2",
+    "prop-types": "15.7.2",
+    "react-helmet": "6.0.0-beta"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "gatsby": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "gatsby": "^2.3.9",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "rimraf": "^2.6.2"
+  },
+  "gitHead": "ceec3b5c91cdaa146ad9adba6077a16b6ff95de5"
+}

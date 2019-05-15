@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-jamfury-base",
+  "name": "@jamfury/gatsby-starter-base",
   "private": true,
   "description": "Gatsby starter for JAMfury sites",
   "version": "0.0.1",

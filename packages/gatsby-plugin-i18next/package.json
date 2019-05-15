@@ -1,0 +1,41 @@
+{
+  "name": "@jamfury/gatsby-plugin-i18next",
+  "description": "Gatsby plugin that provides i18n support",
+  "version": "0.0.1",
+  "repository": "JAMfury/gatsby-monorepo",
+  "keywords": [
+    "react",
+    "gatsby",
+    "gatsby-plugin",
+    "gatsby-component",
+    "i18next",
+    "i18n"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore __tests__",
+    "build:watch": "babel -w src --out-dir . --ignore __tests__",
+    "prepare": "yarn run build"
+  },
+  "dependencies": {
+    "@jamfury/gatsby-i18n": "0.0.1",
+    "i18next": "15.1.0",
+    "i18next-browser-languagedetector": "3.0.1",
+    "i18next-xhr-backend": "2.0.1",
+    "react-i18next": "10.6.1",
+    "supports-color": "6.1.0"
+  },
+  "peerDependencies": {
+    "gatsby": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "babel-preset-gatsby-package": "^0.1.4",
+    "gatsby": "^2.3.9",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "gitHead": "ceec3b5c91cdaa146ad9adba6077a16b6ff95de5"
+}
