@@ -10326,10 +10326,10 @@ react-hot-loader@^4.6.2:
     shallowequal "^1.0.2"
     source-map "^0.7.3"
 
-react-i18next@10.6.1:
-  version "10.6.1"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-10.6.1.tgz#044c39fb463a8d96cc548509187a1bb316e660fa"
-  integrity sha512-uuLksWCYR0i9tRZyKsQpcbJ0kiXYVDcaFXPVapZe8mYXReXvKsBgaOb6EwtqdXqiidO+HJAbyLOq9g3yzuZDEQ==
+react-i18next@10.9.1:
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-10.9.1.tgz#98d96954eb2249746e190b1fdd96782916b20d98"
+  integrity sha512-e00AJK6AImhqBY3diqbO2UI8Sq3rt4IF1LikadpIei+1fqNWobZ0gDAEXGxMoiG/rbd+JfpBI68Kg42pUf9m4A==
   dependencies:
     "@babel/runtime" "^7.3.1"
     html-parse-stringify2 "2.0.1"
