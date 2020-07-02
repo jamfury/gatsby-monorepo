@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@jamfury/gatsby-plugin-i18next": "^0.1.2",
-    "gatsby-source-filesystem": "2.0.33"
+    "gatsby-source-filesystem": "2.3.16"
   },
   "peerDependencies": {
     "gatsby": "*",
