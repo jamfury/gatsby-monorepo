@@ -36,7 +36,7 @@
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "babel-preset-gatsby-package": "^0.1.4",
-    "gatsby": "^2.3.9",
+    "gatsby": "^3.1.2",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
